@@ -6,10 +6,10 @@
 // Description : Hello World in C++, Ansi-style
 //============================================================================
 
-#include <iostream>
-using namespace std;
+
+#include "factorialNum.h"
 
 int main() {
-	cout << "!!!Hello World!" << endl; // prints !!!Hello World!!!
+	factorialNum();
 	return 0;
 }
