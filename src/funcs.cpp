@@ -1,16 +1,14 @@
+#include "funcs.h"
+#include <iostream>
+using namespace std;
+
 /*
  * factorialNum.h 阶乘溢出问题 pos范围及进位判断条件
  *
  *  Created on: 2018年4月19日
  *      Author: xuxinxx.xu
  */
-
-#ifndef FACTORIALNUM_H_
-#define FACTORIALNUM_H_
-#include <iostream>
-using namespace std;
 const int MAX = 3000;
-
 void factorial(int (&arr)[MAX], int n, int *&pos) {
 	if (n > 1) {
 		int added = 0; // 进位数
@@ -31,7 +29,7 @@ ostream &reversePrintln(int (&arr)[MAX], int *end, int *beg) {
 	}
 	return cout;
 }
-void factorialNum() {
+void factorialMain() {
 	int arr[MAX];
 	// 初始化，初值为1
 	memset(arr, 0, sizeof(arr));
@@ -44,5 +42,3 @@ void factorialNum() {
 	factorial(arr, n, pos);
 	reversePrintln(arr, pos, beg) << endl;
 }
-
-#endif /* FACTORIALNUM_H_ */

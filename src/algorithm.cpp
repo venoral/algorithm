@@ -7,9 +7,9 @@
 //============================================================================
 
 
-#include "factorialNum.h"
+#include "funcs.h"
 
 int main() {
-	factorialNum();
+	factorialMain();
 	return 0;
 }
