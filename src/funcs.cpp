@@ -42,3 +42,18 @@ void factorialMain() {
 	factorial(arr, n, pos);
 	reversePrintln(arr, pos, beg) << endl;
 }
+
+/**
+ * physical period.h 生理周期问题
+ */
+void physicalMain() {
+	int p, e, i, d, caseNo = 0;
+	while(cin >> p >> e >> i >> d && p >=0 ) { // 保证p不为负数
+		++caseNo;
+		int k;
+		for(k = d+1; (k-p)%23; ++k);
+			for(; (k-e)%28; k+=23);
+				for(; (k-i)%33; k+=23*28);
+					cout << "caseNo: " << caseNo << ":the next tripe peak occurs in " << k-d << endl;
+	}
+}

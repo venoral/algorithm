@@ -13,4 +13,10 @@ void factorial(int (&arr)[], int n, int *&pos);
 ostream &reversePrintln(int (&arr)[], int *end, int *beg);
 void factorialMain();
 
+/**
+ * physical period.h 生理周期问题
+ *
+ */
+void physicalMain();
+
 #endif /* FUNCS_H_ */

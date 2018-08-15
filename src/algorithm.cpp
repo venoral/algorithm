@@ -10,6 +10,7 @@
 #include "funcs.h"
 
 int main() {
-	factorialMain();
+//	factorialMain();
+//	physicalMain();
 	return 0;
 }
